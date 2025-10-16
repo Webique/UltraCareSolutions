@@ -88,8 +88,8 @@ export default function Header() {
               >
                 <Link
                   href={"/#contact"}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  // target="_blank"
+                  // rel="noopener noreferrer"
                 >
                   {t("cta")}
                 </Link>
@@ -180,8 +180,8 @@ export default function Header() {
                 >
                   <Link
                     href={"/#contact"}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    // target="_blank"
+                    // rel="noopener noreferrer"
                     className="block w-full"
                     onClick={() => setIsMenuOpen(false)}
                   >
