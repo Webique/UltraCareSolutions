@@ -120,7 +120,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 1.2 }}
           className="absolute bottom-8 left-1/2 -translate-x-1/2 sm:bottom-10"
         >
-          <m.a href="#services" className="flex flex-col items-center gap-2">
+          <m.a href="#about" className="flex flex-col items-center gap-2">
             <m.span
               animate={{ opacity: [0.5, 1, 0.5] }}
               transition={{
