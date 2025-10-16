@@ -55,7 +55,7 @@ export default function Header() {
                   href={item.href}
                   className={cn(
                     "text-foreground hover:text-primary relative font-medium transition-colors",
-                    "before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-0 before:bg-current",
+                    "before:absolute before:bottom-0 before:start-0 before:h-0.5 before:w-0 before:bg-current",
                     "before:transition-all before:duration-300 hover:before:w-full"
                   )}
                 >
