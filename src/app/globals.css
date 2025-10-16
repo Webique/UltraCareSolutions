@@ -114,8 +114,9 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50 scroll-mt-24 lg:scroll-mt-40;
+    @apply border-border outline-ring/50;
   }
+  /* scroll-mt-24 lg:scroll-mt-40 */
   button:not(:disabled),
   [role="button"]:not(:disabled) {
     cursor: pointer;
