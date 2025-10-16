@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  ArrowRight,
   Award,
   Building,
   CheckCircle,
@@ -17,7 +16,6 @@ import * as m from "motion/react-m";
 import ExportedImage from "next-image-export-optimizer";
 import { useTranslations } from "next-intl";
 
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
 export default function ServicesSection() {
@@ -163,20 +161,23 @@ export default function ServicesSection() {
           </div>
 
           {/* Services Image */}
-          <m.div variants={itemVariants} className="mb-16">
-            <div className="from-primary/10 to-secondary/10 relative mx-auto h-64 max-w-2xl overflow-hidden rounded-2xl bg-gradient-to-br p-6 shadow-lg">
-              <ExportedImage
-                src="/images/warehouse-storage.svg"
-                alt="Warehouse Storage Solutions - UltraCare FDA Services"
-                width={300}
-                height={200}
-                className="mx-auto h-full w-auto object-contain"
-              />
-            </div>
+          <m.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="relative mx-auto my-16 h-[320px] w-full max-w-3xl overflow-hidden rounded-3xl shadow-2xl"
+          >
+            <ExportedImage
+              src="/images/services.jpg"
+              alt="Warehouse Storage Solutions - UltraCare FDA Services"
+              fill
+              className="object-cover transition-transform duration-700 hover:scale-105"
+            />
           </m.div>
 
           {/* Services Grid */}
-          <div className="mb-16 grid gap-8 lg:grid-cols-2 xl:grid-cols-3">
+          <div className="mx-auto mb-16 grid max-w-6xl gap-8 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service, index) => (
               <m.div
                 key={index}
@@ -184,46 +185,64 @@ export default function ServicesSection() {
                 whileHover="hover"
                 className="group"
               >
-                <Card className="h-full border border-gray-200 bg-white p-6 transition-all duration-300 hover:border-gray-300 hover:shadow-xl">
+                <Card className="relative mx-auto h-full max-w-md overflow-hidden border-0 bg-white/80 p-8 shadow-lg backdrop-blur-sm transition-all duration-500 hover:bg-white hover:shadow-2xl">
+                  {/* Background Gradient Overlay */}
                   <div
-                    className={`bg-gradient-to-r ${service.gradient} mb-6 flex h-14 w-14 items-center justify-center rounded-xl transition-transform duration-300 group-hover:scale-110`}
-                  >
-                    <service.icon className="text-white" size={28} />
-                  </div>
+                    className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 transition-opacity duration-500 group-hover:opacity-5`}
+                  />
 
-                  <h3 className="group-hover:text-primary mb-3 text-xl font-bold text-gray-900 transition-colors duration-300">
-                    {service.title}
-                  </h3>
-
-                  <p className="mb-6 leading-relaxed text-gray-600">
-                    {service.description}
-                  </p>
-
-                  <div className="mb-6 space-y-3">
-                    {service.features.map((feature, featureIndex) => (
+                  {/* Icon with enhanced styling */}
+                  <div className="relative mb-8">
+                    <div
+                      className={`bg-gradient-to-br ${service.gradient} relative flex h-20 w-20 items-center justify-center rounded-2xl shadow-lg transition-all duration-500 group-hover:rotate-3 group-hover:scale-110 group-hover:shadow-xl`}
+                    >
+                      <service.icon
+                        className="text-white drop-shadow-sm"
+                        size={32}
+                      />
+                      {/* Glow effect */}
                       <div
-                        key={featureIndex}
-                        className="flex items-center gap-3"
-                      >
-                        <CheckCircle
-                          className="text-secondary flex-shrink-0"
-                          size={16}
-                        />
-                        <span className="text-sm text-gray-600">{feature}</span>
-                      </div>
-                    ))}
+                        className={`absolute inset-0 bg-gradient-to-br ${service.gradient} rounded-2xl opacity-0 blur-xl transition-opacity duration-500 group-hover:opacity-30`}
+                      />
+                    </div>
                   </div>
 
-                  <Button
-                    variant="outline"
-                    className="group-hover:border-primary/30 group-hover:bg-primary/5 group-hover:text-primary w-full transition-all duration-300"
-                  >
-                    اعرف المزيد
-                    <ArrowRight
-                      size={16}
-                      className="mr-2 transition-transform duration-300 group-hover:translate-x-1"
-                    />
-                  </Button>
+                  {/* Content */}
+                  <div className="relative">
+                    <h3 className="group-hover:text-primary mb-4 text-2xl font-bold text-gray-900 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+
+                    <p className="mb-8 leading-relaxed text-gray-600">
+                      {service.description}
+                    </p>
+
+                    {/* Features with enhanced styling */}
+                    <div className="space-y-4">
+                      {service.features.map((feature, featureIndex) => (
+                        <div
+                          key={featureIndex}
+                          className="flex items-start gap-3 transition-transform duration-300 hover:translate-x-1"
+                        >
+                          <div className="mt-0.5 flex-shrink-0">
+                            <CheckCircle
+                              className="text-secondary drop-shadow-sm"
+                              size={18}
+                            />
+                          </div>
+                          <span className="font-medium leading-relaxed text-gray-700">
+                            {feature}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Decorative corner accent */}
+                  <div
+                    className={`absolute right-0 top-0 h-20 w-20 bg-gradient-to-bl ${service.gradient} opacity-10 transition-opacity duration-500 group-hover:opacity-20`}
+                    style={{ clipPath: "polygon(100% 0%, 0% 0%, 100% 100%)" }}
+                  />
                 </Card>
               </m.div>
             ))}
@@ -241,7 +260,9 @@ export default function ServicesSection() {
               <div className="from-primary to-secondary mb-2 bg-gradient-to-r bg-clip-text text-3xl font-bold text-transparent">
                 100%
               </div>
-              <p className="font-medium text-gray-600">معدل نجاح الخدمات</p>
+              <p className="font-medium text-gray-600">
+                {t("stats.successRate")}
+              </p>
             </div>
 
             <div className="text-center">
@@ -251,7 +272,7 @@ export default function ServicesSection() {
               <div className="from-secondary to-secondary/80 mb-2 bg-gradient-to-r bg-clip-text text-3xl font-bold text-transparent">
                 24/7
               </div>
-              <p className="font-medium text-gray-600">دعم متواصل</p>
+              <p className="font-medium text-gray-600">{t("stats.support")}</p>
             </div>
 
             <div className="text-center">
@@ -261,7 +282,7 @@ export default function ServicesSection() {
               <div className="from-primary to-primary/80 mb-2 bg-gradient-to-r bg-clip-text text-3xl font-bold text-transparent">
                 500+
               </div>
-              <p className="font-medium text-gray-600">ترخيص مكتمل</p>
+              <p className="font-medium text-gray-600">{t("stats.licenses")}</p>
             </div>
 
             <div className="text-center">
@@ -269,9 +290,9 @@ export default function ServicesSection() {
                 <Building className="text-secondary" size={32} />
               </div>
               <div className="from-secondary to-primary mb-2 bg-gradient-to-r bg-clip-text text-3xl font-bold text-transparent">
-                سريع
+                {t("stats.speedValue")}
               </div>
-              <p className="font-medium text-gray-600">إنجاز المعاملات</p>
+              <p className="font-medium text-gray-600">{t("stats.speed")}</p>
             </div>
           </m.div>
         </m.div>

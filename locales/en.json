@@ -84,6 +84,13 @@
             "market": "Market Support"
           }
         }
+      },
+      "stats": {
+        "successRate": "Service Success Rate",
+        "support": "Continuous Support",
+        "licenses": "Completed Licenses",
+        "speed": "Transaction Processing",
+        "speedValue": "Fast"
       }
     },
     "AboutInfoSection": {

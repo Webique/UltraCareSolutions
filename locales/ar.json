@@ -84,6 +84,13 @@
             "market": "دعم السوق"
           }
         }
+      },
+      "stats": {
+        "successRate": "معدل نجاح الخدمات",
+        "support": "دعم متواصل",
+        "licenses": "ترخيص مكتمل",
+        "speed": "إنجاز المعاملات",
+        "speedValue": "سريع"
       }
     },
     "AboutInfoSection": {
