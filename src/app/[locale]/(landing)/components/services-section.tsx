@@ -67,7 +67,8 @@ export default function ServicesSection() {
         t("services.licenses.features.feed")
       ],
       color: "primary",
-      gradient: "from-primary to-primary/80"
+      gradient: "from-primary to-primary/80",
+      id: "licenses"
     },
     {
       icon: Package,
@@ -80,7 +81,8 @@ export default function ServicesSection() {
         t("services.registration.features.submission")
       ],
       color: "secondary",
-      gradient: "from-secondary to-secondary/80"
+      gradient: "from-secondary to-secondary/80",
+      id: "registration"
     },
     {
       icon: Warehouse,
@@ -93,7 +95,8 @@ export default function ServicesSection() {
         t("services.storage.features.compliant")
       ],
       color: "primary",
-      gradient: "from-primary/80 to-primary"
+      gradient: "from-primary/80 to-primary",
+      id: "storage"
     },
     {
       icon: Building,
@@ -106,7 +109,8 @@ export default function ServicesSection() {
         t("services.warehouses.features.environmental")
       ],
       color: "secondary",
-      gradient: "from-secondary/80 to-secondary"
+      gradient: "from-secondary/80 to-secondary",
+      id: "warehouses"
     },
     {
       icon: MessageCircle,
@@ -119,7 +123,8 @@ export default function ServicesSection() {
         t("services.consulting.features.market")
       ],
       color: "primary",
-      gradient: "from-primary to-primary/60"
+      gradient: "from-primary to-primary/60",
+      id: "consulting"
     }
   ];
 
@@ -180,6 +185,7 @@ export default function ServicesSection() {
           <div className="mx-auto mb-16 grid max-w-6xl gap-8 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service, index) => (
               <m.div
+                id={service.id}
                 key={index}
                 variants={cardVariants}
                 whileHover="hover"
