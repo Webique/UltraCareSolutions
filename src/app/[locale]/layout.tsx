@@ -1,14 +1,14 @@
 import type { Locale } from "next-intl";
 
-import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { notFound } from "next/navigation";
 import { getLangDir } from "rtl-detect";
 
-import { routing } from "@/i18n/routing.public";
-import { siteConfig } from "@/config/site";
 import RootProviders from "@/app/root-providers";
 import Layout from "@/components/layout";
+import { siteConfig } from "@/config/site";
+import { routing } from "@/i18n/routing.public";
 
 import Document from "../document";
 

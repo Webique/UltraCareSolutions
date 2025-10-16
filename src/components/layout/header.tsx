@@ -1,23 +1,14 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
 import { useTranslations } from "next-intl";
 
-
 export default function Header() {
   const t = useTranslations("Header");
 
-
-
-
   return (
     <>
-      <header
-
-      >
-
-      </header>
-
-
+      <header></header>
     </>
   );
 }

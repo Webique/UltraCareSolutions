@@ -274,6 +274,10 @@
       }
     }
   },
+  "Manifest": {
+    "name": "UltraCare | Saudi FDA Solutions",
+    "short_name": "UltraCare"
+  },
   "Error": {
     "title": "Sorry, an unexpected error occurred!",
     "description": "<p>We apologize for this error we encountered.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>"
@@ -287,29 +291,30 @@
     "backToHome": "Back to Home"
   },
   "LocaleLayout": {
-    "name": "Rawad Al-Tawjih | Human Resources, Administrative and Government Relations Services",
-    "short_name": "Rawad Al-Tawjih",
-    "description": "We at Rawad Al-Tawjih Company are proud to provide professional expertise exceeding eighteen years in the field of specialized human resources services, administrative affairs management, and efficient government transactions processing. We strive to facilitate your business operations through innovative solutions and a 100% qualified Saudi workforce, ensuring you the highest levels of efficiency and operational excellence.",
+    "name": "UltraCare | Saudi FDA Solutions",
+    "short_name": "UltraCare",
+    "description": "We are a company specialized in providing comprehensive solutions for all requirements and licenses of the Saudi Food and Drug Authority. We have a professional team with extensive experience in handling regulatory and administrative procedures in the fields of food, pharmaceuticals, medical supplies and devices, and feed additives. We work according to the highest standards of quality and commitment to facilitate tasks for our clients and support the growth of their establishments towards success and sustainability.",
     "keywords": [
-      "Rawad Al-Tawjih",
-      "Human Resources",
-      "Administrative Services",
-      "Government Relations",
-      "Employee Management",
-      "Social Insurance",
-      "Wage Protection",
-      "Regulatory Compliance",
-      "Government Services",
-      "Business Management",
-      "Company Formation",
-      "Municipal Licenses",
-      "Business Services",
-      "Saudi Human Resources Services"
+      "UltraCare",
+      "UltraCare Solutions",
+      "Food and Drug Authority",
+      "SFDA",
+      "Food and Drug Licenses",
+      "Product Listing",
+      "Food Product Registration",
+      "Pharmaceutical Licenses",
+      "Medical Devices",
+      "Medical Supplies",
+      "Feed Additives",
+      "Food Product Storage",
+      "SFDA Compliant Warehouses",
+      "Warehouse Setup",
+      "Regulatory Consulting",
+      "Factory Listing",
+      "Municipality Licenses",
+      "Civil Defense",
+      "Saudi Food and Drug Solutions"
     ]
-  },
-  "LocaleSwitcher": {
-    "label": "Change language",
-    "locale": "{locale, select, ar {🇸🇦 Arabic} en {🇺🇸 English} other {Unknown}}"
   },
   "Header": {
     "nav": {
