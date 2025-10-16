@@ -2,11 +2,14 @@
 
 import { HelpCircle, Minus, Plus } from "lucide-react";
 import * as m from "motion/react-m";
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 
 import { Card } from "@/components/ui/card";
 
 export default function FAQSection() {
+  const t = useTranslations("IndexPage.FAQSection");
+
   const [openItems, setOpenItems] = useState<number[]>([0]);
 
   const toggleItem = (index: number) => {
@@ -35,48 +38,7 @@ export default function FAQSection() {
     }
   };
 
-  const faqItems = [
-    {
-      question: "ما هي الخدمات التي تقدمونها في مجال هيئة الغذاء والدواء؟",
-      answer:
-        "نقدم مجموعة شاملة من الخدمات تشمل: الحصول على التراخيص الرسمية، إدراج المنتجات والمصانع، خدمات التخزين المتوافقة مع الاشتراطات، تجهيز المستودعات، والاستشارات التجارية المتخصصة."
-    },
-    {
-      question: "كم يستغرق الحصول على ترخيص هيئة الغذاء والدواء؟",
-      answer:
-        "المدة تختلف حسب نوع الترخيص والمنتج، لكن عادة تتراوح بين 2-8 أسابيع. نحن نعمل على تسريع العملية من خلال خبرتنا وعلاقاتنا الجيدة مع الجهات المختصة."
-    },
-    {
-      question: "هل تقدمون خدمات للشركات الصغيرة والناشئة؟",
-      answer:
-        "نعم، نحن متخصصون في دعم الشركات الصغيرة والمتوسطة والناشئة. نقدم باقات مرنة وأسعار تنافسية تناسب احتياجاتهم وميزانياتهم."
-    },
-    {
-      question: "ما هي تكلفة خدماتكم؟",
-      answer:
-        "التكلفة تعتمد على نوع الخدمة المطلوبة وحجم المشروع. نقدم استشارة مجانية أولى لتقييم احتياجاتكم وتقديم عرض سعر مفصل ومناسب."
-    },
-    {
-      question: "هل تضمنون الحصول على التراخيص؟",
-      answer:
-        "نعم، لدينا معدل نجاح عالي جداً في الحصول على التراخيص بفضل خبرتنا الطويلة وفهمنا العميق لمتطلبات هيئة الغذاء والدواء. نضمن المتابعة حتى الحصول على الترخيص."
-    },
-    {
-      question: "هل تقدمون خدمات في جميع مناطق المملكة؟",
-      answer:
-        "نعم، نقدم خدماتنا في جميع أنحاء المملكة العربية السعودية. لدينا شبكة واسعة من الشراكات والمكاتب التي تمكننا من خدمة عملائنا في كل المناطق."
-    },
-    {
-      question: "كيف يمكنني البدء في الحصول على خدماتكم؟",
-      answer:
-        "يمكنكم التواصل معنا عبر الهاتف أو البريد الإلكتروني أو زيارة مكاتبنا. سنقوم بتحديد موعد للاستشارة المجانية وتقييم احتياجاتكم ووضع خطة عمل مناسبة."
-    },
-    {
-      question: "هل تقدمون دعم ما بعد الحصول على التراخيص؟",
-      answer:
-        "بالطبع، نقدم دعم مستمر حتى بعد الحصول على التراخيص. هذا يشمل المتابعة الدورية، التجديدات، والمساعدة في أي تحديثات أو تغييرات مطلوبة."
-    }
-  ];
+  const faqItems = t.raw("items");
 
   return (
     <section
@@ -100,28 +62,30 @@ export default function FAQSection() {
             <m.div variants={itemVariants} className="mb-6">
               <span className="border-primary/20 bg-primary/10 text-primary inline-flex items-center gap-2 rounded-full border px-6 py-3 text-sm font-medium">
                 <HelpCircle size={18} />
-                الأسئلة الشائعة
+                {t("badge")}
               </span>
             </m.div>
             <m.h2
               variants={itemVariants}
-              className="text-primary mb-8 text-4xl font-bold lg:text-6xl"
+              className="mb-8 text-4xl font-bold text-gray-900 lg:text-6xl"
             >
-              أسئلة شائعة
+              {t("title")}{" "}
+              <span className="from-primary to-secondary bg-gradient-to-r bg-clip-text text-transparent">
+                {t("titleHighlight")}
+              </span>
             </m.h2>
             <m.p
               variants={itemVariants}
               className="mx-auto max-w-3xl text-xl leading-relaxed text-gray-600"
             >
-              إجابات على أكثر الأسئلة شيوعاً حول خدماتنا في مجال هيئة الغذاء
-              والدواء
+              {t("description")}
             </m.p>
           </div>
 
           {/* FAQ Items */}
           <div className="mx-auto max-w-4xl">
             <div className="space-y-4">
-              {faqItems.map((item, index) => (
+              {faqItems.map((item: any, index: number) => (
                 <m.div key={index} variants={itemVariants} className="group">
                   <Card className="gap-0 overflow-hidden border border-gray-200 bg-white py-0 shadow-sm transition-all duration-300 hover:shadow-lg">
                     <button

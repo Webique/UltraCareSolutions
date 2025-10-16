@@ -12,10 +12,13 @@ import {
   Zap
 } from "lucide-react";
 import * as m from "motion/react-m";
+import { useTranslations } from "next-intl";
 
 import { Card } from "@/components/ui/card";
 
 export default function ContactSection() {
+  const t = useTranslations("IndexPage.ContactSection");
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -52,30 +55,30 @@ export default function ContactSection() {
   const contactInfo = [
     {
       icon: MapPin,
-      title: "موقعنا",
-      value: "المملكة العربية السعودية",
-      description: "نخدم جميع أنحاء المملكة",
+      title: t("contactInfo.location.title"),
+      value: t("contactInfo.location.value"),
+      description: t("contactInfo.location.description"),
       gradient: "from-primary to-primary/80"
     },
     {
       icon: Clock,
-      title: "ساعات العمل",
-      value: "24/7 متاحون",
-      description: "خدمة على مدار الساعة",
+      title: t("contactInfo.hours.title"),
+      value: t("contactInfo.hours.value"),
+      description: t("contactInfo.hours.description"),
       gradient: "from-secondary to-secondary/80"
     },
     {
       icon: Phone,
-      title: "اتصل بنا",
-      value: "خدمة عملاء متميزة",
-      description: "فريق دعم احترافي",
+      title: t("contactInfo.phone.title"),
+      value: t("contactInfo.phone.value"),
+      description: t("contactInfo.phone.description"),
       gradient: "from-primary/80 to-primary"
     },
     {
       icon: Mail,
-      title: "راسلنا",
-      value: "استجابة سريعة",
-      description: "رد خلال 24 ساعة",
+      title: t("contactInfo.email.title"),
+      value: t("contactInfo.email.value"),
+      description: t("contactInfo.email.description"),
       gradient: "from-secondary/80 to-secondary"
     }
   ];
@@ -83,18 +86,18 @@ export default function ContactSection() {
   const features = [
     {
       icon: Award,
-      title: "جودة معتمدة",
-      description: "خدمات بأعلى المعايير"
+      title: t("features.quality.title"),
+      description: t("features.quality.description")
     },
     {
       icon: Users,
-      title: "فريق خبير",
-      description: "متخصصون في المجال"
+      title: t("features.team.title"),
+      description: t("features.team.description")
     },
     {
       icon: Zap,
-      title: "سرعة في التنفيذ",
-      description: "إنجاز المهام بكفاءة"
+      title: t("features.speed.title"),
+      description: t("features.speed.description")
     }
   ];
 
@@ -120,25 +123,23 @@ export default function ContactSection() {
             <m.div variants={itemVariants} className="mb-6">
               <span className="border-primary/20 bg-primary/10 text-primary inline-flex items-center gap-2 rounded-full border px-6 py-3 text-sm font-medium">
                 <MessageCircle size={18} />
-                تواصل معنا
+                {t("badge")}
               </span>
             </m.div>
             <m.h2
               variants={itemVariants}
               className="mb-8 text-4xl font-bold text-gray-900 lg:text-6xl"
             >
-              نحن هنا{" "}
+              {t("title")}{" "}
               <span className="from-primary to-secondary bg-gradient-to-r bg-clip-text text-transparent">
-                لخدمتكم
+                {t("titleHighlight")}
               </span>
             </m.h2>
             <m.p
               variants={itemVariants}
               className="mx-auto max-w-4xl text-xl leading-relaxed text-gray-600"
             >
-              فريقنا المتخصص جاهز لمساعدتكم في جميع احتياجاتكم المتعلقة بهيئة
-              الغذاء والدواء. نقدم استشارات مجانية وحلول متكاملة لضمان نجاح
-              أعمالكم
+              {t("description")}
             </m.p>
           </div>
 
@@ -200,24 +201,30 @@ export default function ContactSection() {
           <m.div variants={itemVariants} className="text-center">
             <Card className="from-primary to-secondary mx-auto max-w-4xl border-0 bg-gradient-to-r p-8 text-white shadow-2xl">
               <div className="mb-6">
-                <h3 className="mb-4 text-2xl font-bold">لماذا تختارنا؟</h3>
-                <p className="text-white/90">
-                  نحن ملتزمون بتقديم أفضل الخدمات وأعلى معايير الجودة
-                </p>
+                <h3 className="mb-4 text-2xl font-bold">
+                  {t("trustSection.title")}
+                </h3>
+                <p className="text-white/90">{t("trustSection.description")}</p>
               </div>
 
               <div className="grid gap-6 md:grid-cols-3">
                 <div className="flex items-center justify-center gap-3">
                   <CheckCircle className="text-white/80" size={20} />
-                  <span className="font-medium">رد سريع خلال ساعات</span>
+                  <span className="font-medium">
+                    {t("trustSection.indicators.response")}
+                  </span>
                 </div>
                 <div className="flex items-center justify-center gap-3">
                   <CheckCircle className="text-white/80" size={20} />
-                  <span className="font-medium">استشارة مجانية</span>
+                  <span className="font-medium">
+                    {t("trustSection.indicators.consultation")}
+                  </span>
                 </div>
                 <div className="flex items-center justify-center gap-3">
                   <CheckCircle className="text-white/80" size={20} />
-                  <span className="font-medium">سرية وأمان تام</span>
+                  <span className="font-medium">
+                    {t("trustSection.indicators.security")}
+                  </span>
                 </div>
               </div>
             </Card>
