@@ -1,0 +1,357 @@
+{
+  "IndexPage": {
+    "HeroSection": {
+      "title": "Rawad Al-Tawjih",
+      "subtitle": "18+ years of experience in human resources and administrative affairs",
+      "contactCta": "Contact Us",
+      "learnMore": "Learn More",
+      "scrollText": "Discover More"
+    },
+    "AboutSection": {
+      "badge": "About Us",
+      "title": "About Us",
+      "subtitle": "Rawad Al-Tawjih for Human Resources, Administrative and Government Relations Services",
+      "imageAlt": "About Rawad Al-Tawjih Company",
+      "ourMission": "Our Mission",
+      "ourMissionDesc": "To provide innovative and reliable solutions that enhance efficiency and operational effectiveness for our clients through a 100% qualified Saudi workforce.",
+      "ourVision": "Our Vision",
+      "ourVisionDesc": "To become a leading company in the field of human resources services, administrative affairs and government relations.",
+      "achievements": {
+        "experience": "18+ Years Experience",
+        "experienceDesc": "Our practical experience exceeds 18 years with the largest Saudi companies and businessmen",
+        "saudiWorkforce": "100% Saudi Workforce",
+        "saudiWorkforceDesc": "Our team is 100% Saudi with sufficient expertise to provide the best services",
+        "compliance": "42 Clients in 2024",
+        "complianceDesc": "We aim to reach more than 100 clients in 2025",
+        "trackRecord": "Comprehensive Services",
+        "trackRecordDesc": "We provide our services by managing your work to manage employee affairs"
+      },
+      "whyChooseUs": "Why Choose Us?",
+      "whyChooseUsDesc": "We provide our services by managing your work to manage employee affairs and daily business operations, with a 100% qualified Saudi workforce.",
+      "yearsExperience": "Years Experience",
+      "saudiWorkforce": "Saudi Workforce",
+      "happyClients": "Happy Clients",
+      "support": "Support"
+    },
+    "OurValuesSection": {
+      "badge": "Our Values",
+      "title": "Our Values",
+      "description": "The core values that guide our professional services",
+      "values": {
+        "excellence": "Professional Excellence",
+        "excellenceDesc": "We excel with sufficient expertise to provide the best services for your business and make it easier for you",
+        "clientCentric": "Client Focus",
+        "clientCentricDesc": "We help you manage employee affairs and daily business operations",
+        "innovation": "Innovation & Efficiency",
+        "innovationDesc": "We continuously work on developing capabilities, knowledge and training our team",
+        "trust": "Trust & Reliability",
+        "trustDesc": "Our team has high efficiency in the field of human resources and administrative affairs"
+      }
+    },
+    "ServicesSection": {
+      "badge": "Our Services",
+      "title": "Our",
+      "services": "Services",
+      "description": "We offer a comprehensive range of professional services designed to meet your business needs and help you achieve your goals efficiently and effectively.",
+      "servicesProvided": "Services Provided",
+      "discoverMore": "Discover More",
+      "stats": {
+        "yearsExperience": "Years Experience",
+        "saudiWorkforce": "Saudi Workforce",
+        "clientsServed": "Clients Served",
+        "supportAvailable": "Support Available"
+      },
+      "servicesList": {
+        "hr": {
+          "title": "Human Resources Services",
+          "description": "Complete HR solutions including recruitment, payroll management, and employee relations",
+          "features": {
+            "recruitment": "Recruitment & Selection",
+            "payroll": "Payroll Management",
+            "relations": "Employee Relations",
+            "performance": "Performance Management"
+          }
+        },
+        "admin": {
+          "title": "Administrative Services",
+          "description": "Comprehensive administrative support to streamline your business operations",
+          "features": {
+            "documents": "Document Management",
+            "optimization": "Process Optimization",
+            "support": "Administrative Support",
+            "compliance": "Compliance Management"
+          }
+        },
+        "government": {
+          "title": "Government Relations",
+          "description": "Expert handling of all government transactions and regulatory compliance",
+          "features": {
+            "transactions": "Government Transactions",
+            "compliance": "Regulatory Compliance",
+            "licenses": "License Management",
+            "documents": "Document Processing"
+          }
+        },
+        "consulting": {
+          "title": "Business Consulting",
+          "description": "Strategic consulting to enhance your business performance and growth",
+          "features": {
+            "planning": "Strategic Planning",
+            "improvement": "Process Improvement",
+            "risk": "Risk Management",
+            "growth": "Growth Consulting"
+          }
+        }
+      },
+      "cta": {
+        "title": "Ready to Get Started?",
+        "description": "Contact us today to discuss your business needs and discover how our professional services can help you achieve your goals.",
+        "consultation": "Request Consultation",
+        "getStarted": "Get Started Now"
+      }
+    },
+    "ContactSection": {
+      "title": "Get In",
+      "touch": "Touch",
+      "description": "Ready to take your business to the next level? Contact us today for a consultation and discover how our professional services can help you achieve your goals.",
+      "contactInfo": {
+        "title": "Contact Information",
+        "description": "We're here to help you with all your business needs. Reach out to us through any of the following channels.",
+        "phone": "Phone",
+        "phoneValue": "+966509645040",
+        "phoneDesc": "Call us anytime",
+        "email": "Email",
+        "emailValue": "landingTemplate@gmail.com",
+        "emailDesc": "Send us an email",
+        "location": "Location",
+        "locationValue": "Saudi Arabia",
+        "locationDesc": "Serving nationwide",
+        "workingHours": "Working Hours",
+        "workingHoursValue": "24/7 Available",
+        "workingHoursDesc": "Always here to help"
+      },
+      "quickContact": "Quick Contact",
+      "form": {
+        "title": "Send us a Message",
+        "description": "Fill out the form below and we'll get back to you within 24 hours.",
+        "firstName": "First Name",
+        "firstNamePlaceholder": "Your first name",
+        "lastName": "Last Name",
+        "lastNamePlaceholder": "Your last name",
+        "email": "Email",
+        "emailPlaceholder": "your.email@example.com",
+        "phone": "Phone",
+        "phonePlaceholder": "+966 50 123 4567",
+        "serviceInterest": "Service Interest",
+        "selectService": "Select a service",
+        "hrService": "Human Resources Services",
+        "adminService": "Administrative Services",
+        "govService": "Government Relations",
+        "consultingService": "Business Consulting",
+        "message": "Message",
+        "messagePlaceholder": "Tell us about your business needs...",
+        "sendMessage": "Send Message"
+      },
+      "whatsapp": {
+        "title": "Prefer WhatsApp?",
+        "description": "Click here to chat with us directly on WhatsApp"
+      }
+    },
+    "WhatsAppFloat": {
+      "tooltip": "Contact us via WhatsApp"
+    },
+    "ClientsSection": {
+      "title": "Our Clients",
+      "description": "We are proud to serve a diverse range of clients from various sectors, reflecting their trust in our professional services",
+      "achievements": {
+        "yearsExperience": "Years Experience",
+        "yearsExperienceDesc": "Over two decades of professional expertise",
+        "saudiWorkforce": "Saudi Workforce",
+        "saudiWorkforceDesc": "Fully qualified Saudi professionals",
+        "clientsServed": "Clients Served",
+        "clientsServedDesc": "Satisfied clients with our services",
+        "supportAvailable": "Support Available",
+        "supportAvailableDesc": "24/7 customer service"
+      }
+    },
+    "TestimonialsSection": {
+      "badge": "Testimonials",
+      "title": "What Our",
+      "clients": "Clients Say",
+      "description": "Discover what our clients say about our professional services and expertise in human resources and management",
+      "testimonials": {
+        "ahmed": {
+          "name": "Ahmed Mohammed Al-Otaibi",
+          "company": "Advanced Technology Company",
+          "position": "HR Manager",
+          "content": "Rawad Al-Tawjih provided us with excellent services in human resources management. Their professional team helped us significantly improve our operations."
+        },
+        "fatima": {
+          "name": "Fatima Al-Salem",
+          "company": "Success Commercial Establishment",
+          "position": "CEO",
+          "content": "We are very pleased with the administrative services provided by Rawad Al-Tawjih. Punctuality and quality performance."
+        },
+        "mohammed": {
+          "name": "Mohammed Abdullah Al-Qahtani",
+          "company": "Modern Business Group",
+          "position": "Chairman of the Board",
+          "content": "Government relations were always a challenge for us, but Rawad Al-Tawjih made it easy and simple. We highly recommend them."
+        },
+        "noura": {
+          "name": "Noura Ahmed",
+          "company": "Comprehensive Development Company",
+          "position": "Operations Manager",
+          "content": "The business consulting provided by Rawad Al-Tawjih helped us make the right strategic decisions."
+        },
+        "khaled": {
+          "name": "Khaled Al-Mutairi",
+          "company": "Technical Innovation Foundation",
+          "position": "CFO",
+          "content": "Excellent customer service and 24/7 support. Rawad Al-Tawjih puts customer satisfaction first."
+        },
+        "reem": {
+          "name": "Reem Al-Otaibi",
+          "company": "Integrated Solutions Company",
+          "position": "Project Manager",
+          "content": "Professional and highly experienced team. They helped us complete all government transactions quickly and efficiently."
+        }
+      },
+      "stats": {
+        "satisfaction": "Client Satisfaction",
+        "satisfactionDesc": "Of our clients are satisfied with our services",
+        "clients": "Happy Clients",
+        "clientsDesc": "Clients benefited from our professional services",
+        "experience": "Years Experience",
+        "experienceDesc": "Of experience in human resources field",
+        "support": "Support Available",
+        "supportDesc": "24/7 customer service"
+      }
+    },
+    "ProcessSection": {
+      "badge": "Our Methodology",
+      "title": "How We Work With You",
+      "description": "We follow an organized and professional methodology to ensure delivering the best services and achieving your business goals",
+      "steps": {
+        "contact": {
+          "title": "Initial Contact",
+          "description": "We reach out to understand your business needs and identify the appropriate services"
+        },
+        "analysis": {
+          "title": "Analysis & Assessment",
+          "description": "We analyze your requirements and assess the current situation to develop a customized action plan"
+        },
+        "solution": {
+          "title": "Solution Delivery",
+          "description": "We present suitable solutions with detailed explanations of each service and its benefits"
+        },
+        "implementation": {
+          "title": "Implementation & Follow-up",
+          "description": "We begin implementing services with continuous monitoring to ensure achieving desired results"
+        },
+        "evaluation": {
+          "title": "Evaluation & Improvement",
+          "description": "We evaluate results and work on continuous improvement to ensure your complete satisfaction"
+        }
+      },
+      "cta": {
+        "title": "Why Choose Rawad Al-Tawjih?",
+        "description": "We are committed to providing distinguished services that help you achieve your business goals",
+        "features": {
+          "precision": {
+            "title": "Precision in Execution",
+            "description": "We adhere to deadlines and deliver high-quality services"
+          },
+          "partnership": {
+            "title": "True Partnership",
+            "description": "We work as a true partner for your success, not just a service provider"
+          },
+          "innovation": {
+            "title": "Innovative Solutions",
+            "description": "We provide innovative and customized solutions for your specific needs"
+          }
+        }
+      }
+    }
+  },
+  "Error": {
+    "title": "Sorry, an unexpected error occurred!",
+    "description": "<p>We apologize for this error we encountered.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>"
+  },
+  "NotFoundPage": {
+    "title": "The requested page was not found",
+    "description": "Sorry, please check the address bar in your browser or use navigation to go to a known page.",
+    "retryButton": "Retry",
+    "contactSupport": "Contact Technical Support",
+    "goBack": "Go Back",
+    "backToHome": "Back to Home"
+  },
+  "LocaleLayout": {
+    "name": "Rawad Al-Tawjih | Human Resources, Administrative and Government Relations Services",
+    "short_name": "Rawad Al-Tawjih",
+    "description": "We at Rawad Al-Tawjih Company are proud to provide professional expertise exceeding eighteen years in the field of specialized human resources services, administrative affairs management, and efficient government transactions processing. We strive to facilitate your business operations through innovative solutions and a 100% qualified Saudi workforce, ensuring you the highest levels of efficiency and operational excellence.",
+    "keywords": [
+      "Rawad Al-Tawjih",
+      "Human Resources",
+      "Administrative Services",
+      "Government Relations",
+      "Employee Management",
+      "Social Insurance",
+      "Wage Protection",
+      "Regulatory Compliance",
+      "Government Services",
+      "Business Management",
+      "Company Formation",
+      "Municipal Licenses",
+      "Business Services",
+      "Saudi Human Resources Services"
+    ]
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, ar {🇸🇦 Arabic} en {🇺🇸 English} other {Unknown}}"
+  },
+  "Header": {
+    "nav": {
+      "home": "Home",
+      "about": "About Us",
+      "services": "Our Services",
+      "contact": "Contact Us"
+    },
+    "cta": "Request Service Now",
+    "siteName": "Rawad Al-Tawjih",
+    "siteDescription": "Distinguished Professional Services",
+    "available24_7": "Available 24/7"
+  },
+  "Footer": {
+    "home": "Home",
+    "about": "About Us",
+    "vision": "Vision & Mission",
+    "identity": "Corporate Identity",
+    "location": "Our Location",
+    "quickLinks": "Quick Links",
+    "services": "Our Services",
+    "contactUs": "Contact Us",
+    "clients": "Our Clients",
+    "testimonials": "Testimonials",
+    "available24_7": "Available 24/7",
+    "connectViaWhatsApp": "Contact us via WhatsApp",
+    "copyright": "© {year} Rawad Al-Tawjih Company. All rights reserved",
+    "companyDescription": "We specialize in providing advanced human resources services and integrated administrative affairs, with a focus on professional quality and excellence in performance",
+    "hrServices": "Human Resources Services",
+    "administrativeServices": "Administrative Services",
+    "governmentRelations": "Government Relations",
+    "businessConsulting": "Business Consulting",
+    "socialMedia": {
+      "whatsapp": "WhatsApp",
+      "x": "X",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook",
+      "tiktok": "TikTok",
+      "email": "Email"
+    },
+    "ourLocation": "Our Location on the Map",
+    "saudiArabia": "Saudi Arabia"
+  }
+}
