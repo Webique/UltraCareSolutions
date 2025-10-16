@@ -31,7 +31,7 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="via-primary/5 to-secondary/10 bg-gradient-to-b from-white py-20"
+      className="via-primary/5 max-w-screen to-secondary/10 overflow-hidden bg-gradient-to-b from-white py-20"
     >
       <div className="layout">
         <m.div
