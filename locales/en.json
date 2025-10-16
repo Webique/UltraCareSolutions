@@ -208,6 +208,48 @@
         }
       }
     },
+    "FeaturesSection": {
+      "badge": "Our Features",
+      "title": "Why We Are",
+      "titleHighlight": "The Best",
+      "description": "We are distinguished by a set of characteristics that make us the optimal choice for all your needs in the field of Food and Drug Authority",
+      "features": {
+        "speed": {
+          "title": "Fast Delivery",
+          "description": "We ensure completion of all transactions in the shortest possible time while maintaining quality"
+        },
+        "security": {
+          "title": "Security and Reliability",
+          "description": "We guarantee information confidentiality and compliance with all required security standards"
+        },
+        "team": {
+          "title": "Specialized Team",
+          "description": "Professional team with extensive experience in all areas of the Food and Drug Authority"
+        },
+        "availability": {
+          "title": "Available 24/7",
+          "description": "Continuous customer service around the clock to ensure resolution of all your inquiries"
+        },
+        "quality": {
+          "title": "Certified Quality",
+          "description": "We work according to the highest quality standards approved locally and internationally"
+        },
+        "growth": {
+          "title": "Sustainable Growth",
+          "description": "We help you achieve sustainable growth for your business through our integrated solutions"
+        }
+      },
+      "availableNow": "Available Now",
+      "cta": {
+        "title": "Discover the Difference With Us",
+        "description": "Join hundreds of clients who trust our distinguished services in the field of Food and Drug Authority",
+        "features": {
+          "fast": "Fast Service",
+          "guaranteed": "Guaranteed Quality",
+          "support": "Continuous Support"
+        }
+      }
+    },
     "WhatsAppFloat": {
       "tooltip": "Contact us via WhatsApp"
     }

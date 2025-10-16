@@ -11,10 +11,13 @@ import {
   Zap
 } from "lucide-react";
 import * as m from "motion/react-m";
+import { useTranslations } from "next-intl";
 
 import { Card } from "@/components/ui/card";
 
 export default function FeaturesSection() {
+  const t = useTranslations("IndexPage.FeaturesSection");
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -51,48 +54,43 @@ export default function FeaturesSection() {
   const features = [
     {
       icon: Zap,
-      title: "سرعة في الإنجاز",
-      description:
-        "نحرص على إنجاز جميع المعاملات في أسرع وقت ممكن مع الحفاظ على الجودة",
+      title: t("features.speed.title"),
+      description: t("features.speed.description"),
       color: "primary",
       gradient: "from-primary to-primary/80"
     },
     {
       icon: Shield,
-      title: "أمان وموثوقية",
-      description:
-        "نضمن سرية المعلومات والالتزام بجميع المعايير الأمنية المطلوبة",
+      title: t("features.security.title"),
+      description: t("features.security.description"),
       color: "secondary",
       gradient: "from-secondary to-secondary/80"
     },
     {
       icon: Users,
-      title: "فريق متخصص",
-      description:
-        "فريق عمل احترافي ذو خبرة عالية في جميع مجالات هيئة الغذاء والدواء",
+      title: t("features.team.title"),
+      description: t("features.team.description"),
       color: "primary",
       gradient: "from-primary/80 to-primary"
     },
     {
       icon: Clock,
-      title: "متاح 24/7",
-      description:
-        "خدمة عملاء متواصلة على مدار الساعة لضمان حل جميع استفساراتكم",
+      title: t("features.availability.title"),
+      description: t("features.availability.description"),
       color: "secondary",
       gradient: "from-secondary/80 to-secondary"
     },
     {
       icon: Award,
-      title: "جودة معتمدة",
-      description: "نعمل وفق أعلى معايير الجودة المعتمدة محلياً ودولياً",
+      title: t("features.quality.title"),
+      description: t("features.quality.description"),
       color: "primary",
       gradient: "from-primary to-primary/60"
     },
     {
       icon: TrendingUp,
-      title: "نمو مستدام",
-      description:
-        "نساعدكم في تحقيق النمو المستدام لأعمالكم من خلال حلولنا المتكاملة",
+      title: t("features.growth.title"),
+      description: t("features.growth.description"),
       color: "secondary",
       gradient: "from-secondary to-secondary/60"
     }
@@ -103,8 +101,8 @@ export default function FeaturesSection() {
       <div className="layout">
         <m.div
           variants={containerVariants}
-          // initial="hidden"
-          // whileInView="visible"
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
         >
           {/* Header */}
@@ -112,21 +110,21 @@ export default function FeaturesSection() {
             <m.div variants={itemVariants} className="mb-4">
               <span className="from-primary/10 to-secondary/10 text-primary inline-flex items-center gap-2 rounded-full bg-gradient-to-r px-4 py-2 text-sm font-medium">
                 <Star size={16} />
-                مميزاتنا
+                {t("badge")}
               </span>
             </m.div>
             <m.h2
               variants={itemVariants}
               className="mb-6 text-3xl font-bold text-gray-900 lg:text-5xl"
             >
-              لماذا نحن <span className="text-primary">الأفضل</span>؟
+              {t("title")}{" "}
+              <span className="text-primary">{t("titleHighlight")}</span>؟
             </m.h2>
             <m.p
               variants={itemVariants}
               className="mx-auto max-w-3xl text-lg leading-relaxed text-gray-600"
             >
-              نتميز بمجموعة من الخصائص التي تجعلنا الخيار الأمثل لجميع
-              احتياجاتكم في مجال هيئة الغذاء والدواء
+              {t("description")}
             </m.p>
           </div>
 
@@ -159,7 +157,9 @@ export default function FeaturesSection() {
 
                   <div className="text-secondary mt-4 flex items-center gap-2">
                     <CheckCircle size={16} />
-                    <span className="text-sm font-medium">متوفر الآن</span>
+                    <span className="text-sm font-medium">
+                      {t("availableNow")}
+                    </span>
                   </div>
                 </Card>
               </m.div>
@@ -172,24 +172,23 @@ export default function FeaturesSection() {
             className="from-primary to-secondary rounded-2xl bg-gradient-to-r p-8 text-center text-white lg:p-12"
           >
             <h3 className="mb-4 text-2xl font-bold lg:text-3xl">
-              اكتشف الفرق معنا
+              {t("cta.title")}
             </h3>
             <p className="mx-auto mb-6 max-w-2xl text-lg text-white/90">
-              انضم إلى مئات العملاء الذين يثقون بخدماتنا المتميزة في مجال هيئة
-              الغذاء والدواء
+              {t("cta.description")}
             </p>
             <div className="flex items-center justify-center gap-8 text-sm">
               <div className="flex items-center gap-2">
                 <CheckCircle size={16} />
-                <span>خدمة سريعة</span>
+                <span>{t("cta.features.fast")}</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle size={16} />
-                <span>جودة مضمونة</span>
+                <span>{t("cta.features.guaranteed")}</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle size={16} />
-                <span>دعم متواصل</span>
+                <span>{t("cta.features.support")}</span>
               </div>
             </div>
           </m.div>

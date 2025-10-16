@@ -229,38 +229,6 @@ export default function ServicesSection() {
             ))}
           </div>
 
-          {/* CTA Section */}
-          <m.div
-            variants={itemVariants}
-            className="from-primary via-secondary to-primary/80 rounded-2xl bg-gradient-to-r p-8 text-center text-white shadow-xl lg:p-12"
-          >
-            <div className="mx-auto max-w-3xl">
-              <h3 className="mb-4 text-2xl font-bold lg:text-4xl">
-                هل أنت مستعد للبدء؟
-              </h3>
-              <p className="mb-8 text-lg leading-relaxed text-white/90">
-                تواصل معنا اليوم لمناقشة احتياجاتك واكتشف كيف يمكن لخدماتنا
-                المتخصصة أن تساعدك في تحقيق أهدافك
-              </p>
-
-              <div className="flex flex-col justify-center gap-4 sm:flex-row">
-                <Button
-                  size="lg"
-                  className="text-primary rounded-xl bg-white px-8 py-4 font-medium shadow-lg transition-all duration-300 hover:scale-105 hover:bg-gray-100 hover:shadow-xl"
-                >
-                  احجز استشارة مجانية
-                </Button>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="hover:text-primary rounded-xl border-2 border-white px-8 py-4 font-medium text-white transition-all duration-300 hover:scale-105 hover:bg-white"
-                >
-                  ابدأ الآن
-                </Button>
-              </div>
-            </div>
-          </m.div>
-
           {/* Stats */}
           <m.div
             variants={itemVariants}
