@@ -25,7 +25,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed left-0 right-0 top-0 z-50 border-gray-200 bg-white/95 shadow-sm backdrop-blur-md">
+    <header className="fixed left-0 right-0 top-0 z-50 border-gray-200 bg-white/80 shadow-sm backdrop-blur-md">
       {/* Main Header */}
       <div className="layout">
         <div className="flex h-16 items-center justify-between lg:h-20">

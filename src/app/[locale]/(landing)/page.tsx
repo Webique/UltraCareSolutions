@@ -4,6 +4,7 @@ import { setRequestLocale } from "next-intl/server";
 import { use } from "react";
 
 import FeaturesSection from "@/app/[locale]/(landing)/components/features-section";
+import HeroSection from "@/app/[locale]/(landing)/components/hero-section";
 
 import ContactSection from "./components/contact-section";
 import FAQSection from "./components/faq-section";
@@ -16,7 +17,7 @@ export default function IndexPage({ params }: PageProps<"/[locale]">) {
 
   return (
     <main>
-      {/* <HeroSection /> */}
+      <HeroSection />
       {/* <AboutSection /> */}
       {/* <ServicesSection /> */}
       <FeaturesSection />
