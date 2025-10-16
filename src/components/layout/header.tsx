@@ -8,7 +8,6 @@ import * as React from "react";
 import LocaleSwitcher from "@/components/locale-switcher";
 import { Button } from "@/components/ui/button";
 import Logo from "@/components/ui/logo";
-import { siteConfig } from "@/config/site";
 import { Link } from "@/i18n/navigation.public";
 import { cn } from "@/lib/utils";
 
@@ -88,7 +87,7 @@ export default function Header() {
                 asChild
               >
                 <Link
-                  href={siteConfig.links.whatsapp}
+                  href={"/#contact"}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -180,7 +179,7 @@ export default function Header() {
                   asChild
                 >
                   <Link
-                    href={siteConfig.links.whatsapp}
+                    href={"/#contact"}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full"

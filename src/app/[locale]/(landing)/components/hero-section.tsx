@@ -98,7 +98,7 @@ export default function HeroSection() {
               size="lg"
               className="hover:shadow-primary/50 rounded-full px-8 py-6 text-base font-bold shadow-2xl transition-all sm:px-10 sm:py-7 sm:text-lg"
             >
-              <Link href="#contact">{t("contactCta")}</Link>
+              <Link href="#services">{t("servicesCta")}</Link>
             </Button>
           </m.div>
           <m.div whileHover={{ scale: 1.05, y: -3 }} whileTap={{ scale: 0.95 }}>
