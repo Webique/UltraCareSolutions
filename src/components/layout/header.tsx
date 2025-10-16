@@ -1,5 +1,6 @@
 "use client";
 
+import { useHeadroom } from "@mantine/hooks";
 import * as m from "motion/react-m";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
@@ -14,6 +15,7 @@ import { cn } from "@/lib/utils";
 export default function Header() {
   const t = useTranslations("Header");
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const pinned = useHeadroom({ fixedAt: 120 });
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -25,7 +27,13 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed left-0 right-0 top-0 z-50 border-gray-200 bg-white/80 shadow-sm backdrop-blur-md">
+    <m.header
+      className="fixed left-0 right-0 top-0 z-50 border-gray-200 bg-white/80 shadow-sm backdrop-blur-md"
+      animate={{
+        transform: pinned ? "translateY(0)" : "translateY(-100%)"
+      }}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
+    >
       {/* Main Header */}
       <div className="layout">
         <div className="flex h-16 items-center justify-between lg:h-20">
@@ -186,6 +194,6 @@ export default function Header() {
           </nav>
         </m.div>
       </div>
-    </header>
+    </m.header>
   );
 }
