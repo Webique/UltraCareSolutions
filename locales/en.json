@@ -26,6 +26,55 @@
         "supportDesc": "Facilitating tasks for our clients",
         "growth": "Sustainable Growth",
         "growthDesc": "Supporting enterprise growth towards success and sustainability"
+      },
+      "visionTitle": "Our Vision",
+      "visionDescription": "To be the first trusted partner for traders and product suppliers in the Saudi market, by providing comprehensive regulatory and consulting services that contribute to accelerating their steps and achieving their goals efficiently.",
+      "goalsTitle": "Our Goals",
+      "goalsList": {
+        "facilitation": "Facilitate all types of procedures related to the Food and Drug Authority.",
+        "support": "Support traders and small enterprises with comprehensive market studies.",
+        "storage": "Provide storage solutions compliant with the requirements of relevant authorities.",
+        "acceleration": "Accelerate product and factory listing processes locally and internationally.",
+        "supervision": "Complete supervision of warehouse setup according to official authority requirements (Food and Drug - Municipality - Civil Defense)."
+      },
+      "processFlow": {
+        "title": "Integrated Work Process",
+        "steps": {
+          "receive": {
+            "title": "Receive Request",
+            "subtitle": "Requirements Analysis"
+          },
+          "review": {
+            "title": "Review & Analysis",
+            "subtitle": "Comprehensive Study"
+          },
+          "execute": {
+            "title": "Execute & Follow-up",
+            "subtitle": "Complete Transactions"
+          },
+          "deliver": {
+            "title": "Final Delivery",
+            "subtitle": "Quality Assurance"
+          }
+        }
+      },
+      "whyChooseUs": {
+        "title": "Why Choose UltraCare?",
+        "description": "We work according to the highest standards of quality and commitment, and we are keen to facilitate tasks for our clients",
+        "features": {
+          "expertise": {
+            "title": "Specialized Expertise",
+            "description": "Professional team with extensive experience in all procedures"
+          },
+          "quality": {
+            "title": "Guaranteed Quality",
+            "description": "We work according to the highest standards of quality and commitment"
+          },
+          "speed": {
+            "title": "Fast Delivery",
+            "description": "Fast and flexible services that keep pace with market developments"
+          }
+        }
       }
     },
     "ServicesSection": {

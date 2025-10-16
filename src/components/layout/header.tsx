@@ -3,13 +3,13 @@
 import { useHeadroom } from "@mantine/hooks";
 import * as m from "motion/react-m";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
 import * as React from "react";
 
 import LocaleSwitcher from "@/components/locale-switcher";
 import { Button } from "@/components/ui/button";
 import Logo from "@/components/ui/logo";
 import { siteConfig } from "@/config/site";
+import { Link } from "@/i18n/navigation.public";
 import { cn } from "@/lib/utils";
 
 export default function Header() {
@@ -87,13 +87,13 @@ export default function Header() {
                 className="group me-2 rounded-full px-5 py-5 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl lg:inline-flex"
                 asChild
               >
-                <a
+                <Link
                   href={siteConfig.links.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   {t("cta")}
-                </a>
+                </Link>
               </Button>
             </div>
           </m.div>
@@ -179,7 +179,7 @@ export default function Header() {
                   className="bg-primary hover:bg-primary/90 text-primary-foreground w-full shadow-lg transition-all duration-300 hover:shadow-2xl"
                   asChild
                 >
-                  <a
+                  <Link
                     href={siteConfig.links.whatsapp}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -187,7 +187,7 @@ export default function Header() {
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {t("cta")}
-                  </a>
+                  </Link>
                 </Button>
               </m.div>
             </div>

@@ -3,6 +3,7 @@ import type { Locale } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { use } from "react";
 
+import AboutSection from "./components/about-section";
 import ContactSection from "./components/contact-section";
 import FAQSection from "./components/faq-section";
 import FeaturesSection from "./components/features-section";
@@ -18,7 +19,7 @@ export default function IndexPage({ params }: PageProps<"/[locale]">) {
   return (
     <main>
       <HeroSection />
-      {/* <AboutSection /> */}
+      <AboutSection />
       <ServicesSection />
       <FeaturesSection />
       <FAQSection />
