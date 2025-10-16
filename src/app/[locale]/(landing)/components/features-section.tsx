@@ -155,12 +155,12 @@ export default function FeaturesSection() {
                     {feature.description}
                   </p>
 
-                  <div className="text-secondary mt-4 flex items-center gap-2">
+                  {/* <div className="text-secondary mt-4 flex items-center gap-2">
                     <CheckCircle size={16} />
                     <span className="text-sm font-medium">
                       {t("availableNow")}
                     </span>
-                  </div>
+                  </div> */}
                 </Card>
               </m.div>
             ))}
