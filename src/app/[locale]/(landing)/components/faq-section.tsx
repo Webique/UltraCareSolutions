@@ -93,24 +93,21 @@ export default function FAQSection() {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.1 }}
         >
           {/* Header */}
-          <div className="mb-20 text-center">
+          <div className="mb-10 text-center sm:mb-20">
             <m.div variants={itemVariants} className="mb-6">
-              <span className="border-secondary/20 bg-secondary/10 text-secondary inline-flex items-center gap-2 rounded-full border px-6 py-3 text-sm font-medium">
+              <span className="border-primary/20 bg-primary/10 text-primary inline-flex items-center gap-2 rounded-full border px-6 py-3 text-sm font-medium">
                 <HelpCircle size={18} />
                 الأسئلة الشائعة
               </span>
             </m.div>
             <m.h2
               variants={itemVariants}
-              className="mb-8 text-4xl font-bold text-gray-900 lg:text-6xl"
+              className="text-primary mb-8 text-4xl font-bold lg:text-6xl"
             >
-              أسئلة{" "}
-              <span className="from-secondary to-primary bg-gradient-to-r bg-clip-text text-transparent">
-                شائعة
-              </span>
+              أسئلة شائعة
             </m.h2>
             <m.p
               variants={itemVariants}
@@ -126,7 +123,7 @@ export default function FAQSection() {
             <div className="space-y-4">
               {faqItems.map((item, index) => (
                 <m.div key={index} variants={itemVariants} className="group">
-                  <Card className="overflow-hidden border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:shadow-lg">
+                  <Card className="gap-0 overflow-hidden border border-gray-200 bg-white py-0 shadow-sm transition-all duration-300 hover:shadow-lg">
                     <button
                       onClick={() => toggleItem(index)}
                       className="flex w-full items-center justify-between p-6 text-right transition-colors duration-200 hover:bg-gray-50"
@@ -163,23 +160,6 @@ export default function FAQSection() {
               ))}
             </div>
           </div>
-
-          {/* Call to Action */}
-          <m.div variants={itemVariants} className="mt-16 text-center">
-            <Card className="from-secondary to-primary mx-auto max-w-2xl border-0 bg-gradient-to-r p-8 text-white shadow-2xl">
-              <HelpCircle className="mx-auto mb-4 h-12 w-12 text-white/80" />
-              <h3 className="mb-4 text-2xl font-bold">لم تجد إجابة لسؤالك؟</h3>
-              <p className="mb-6 text-white/90">
-                فريقنا جاهز للإجابة على جميع استفساراتكم وتقديم المساعدة
-              </p>
-              <a
-                href="#contact"
-                className="text-secondary inline-flex items-center gap-2 rounded-lg bg-white px-8 py-3 font-medium transition-all duration-300 hover:scale-105 hover:bg-white/90"
-              >
-                تواصل معنا الآن
-              </a>
-            </Card>
-          </m.div>
         </m.div>
       </div>
     </section>
